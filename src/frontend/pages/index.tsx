@@ -33,10 +33,12 @@ const Home: NextPage = () => {
                   extraction, and scoliosis curve measurement from X-rays.
                 </p>
                 <div className="mt-6">
-                  <Link href="/app">
-                    <a className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3 text-white font-semibold shadow-md transition hover:opacity-90">
+                  <Link
+                    href="/app"
+                    className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-3 text-white font-semibold shadow-md transition hover:opacity-90">
+                    
                       Open App
-                    </a>
+                    
                   </Link>
                 </div>
               </div>

@@ -17,19 +17,21 @@ const About: NextPage = () => {
       <nav className="relative z-50">
         <div className="fluid-container py-7 px-9 w-full overflow-hidden">
           <div className="flex justify-between gap-x-8">
-            <Link href="/">
-              <a className="cursor-pointer">
-                <h1 className="text-2xl text-primary">
-                  <span className="font-black">Scolio</span>tect
-                </h1>
-              </a>
+            <Link href="/" className="cursor-pointer">
+
+              <h1 className="text-2xl text-primary">
+                <span className="font-black">Scolio</span>tect
+              </h1>
+
             </Link>
             <ul className="flex gap-x-8 overflow-hidden">
               <li>
-                <Link href="/about">
-                  <a className="text-primary text-sm transition hover:text-primary">
+                <Link
+                  href="/about"
+                  className="text-primary text-sm transition hover:text-primary">
+                  
                     About
-                  </a>
+                  
                 </Link>
               </li>
             </ul>

@@ -25,10 +25,12 @@ const ErrorPage = () => {
               <br />
               Wrong link perhaps?
             </p>
-            <Link href="/">
-              <a className="py-5 px-5 bg-primary w-full text-center rounded-2xl text-white hover:shadow-lg">
+            <Link
+              href="/"
+              className="py-5 px-5 bg-primary w-full text-center rounded-2xl text-white hover:shadow-lg">
+              
                 Take me back home
-              </a>
+              
             </Link>
           </div>
         </div>

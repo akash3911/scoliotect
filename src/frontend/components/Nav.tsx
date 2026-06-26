@@ -20,12 +20,12 @@ const Nav = () => {
               <span className="font-black">Scolio</span>tect
             </a>
           ) : (
-            <Link href="/">
-              <a className="cursor-pointer">
-                <h1 className="text-2xl text-primary">
-                  <span className="font-black">Scolio</span>tect
-                </h1>
-              </a>
+            <Link href="/" className="cursor-pointer">
+
+              <h1 className="text-2xl text-primary">
+                <span className="font-black">Scolio</span>tect
+              </h1>
+
             </Link>
           )}
           <ul className="flex gap-x-8 overflow-hidden">
@@ -47,15 +47,15 @@ interface NavLink {
 const NavLink: React.FC<NavLink> = ({ name, href }) => {
   const router = useRouter();
   return (
-    <Link href={href}>
-      <a
-        className={`
-      ${
-        router.pathname === href ? "text-primary" : "text-gray-500"
-      } text-sm transition hover:text-primary`}
-      >
-        {name}
-      </a>
+    <Link
+      href={href}
+      className={`
+    ${
+      router.pathname === href ? "text-primary" : "text-gray-500"
+    } text-sm transition hover:text-primary`}>
+
+      {name}
+
     </Link>
   );
 };

@@ -3,16 +3,22 @@ frontend:
 git clone https://github.com/akash3911/scoliosis.git
 cd src/frontend
 pnpm install
+pnpm dev
+
+
+#for build, comment/remove output: "export" in next config
 pnpm build
 pnpm start
 ```
 
 backend:
 ```sh
+To set up the backend using `uv`:
+
+```bash
 cd src/backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-pip uninstall opencv-python -y
-pip install opencv-python-headless --force-reinstall
-c```
+curl -LsSf https://astral.sh/uv/install.sh | sh # if uv is not installed
+uv sync
+uv run uvicorn main:app --reload
+```
+

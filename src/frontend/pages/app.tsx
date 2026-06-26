@@ -171,11 +171,13 @@ const MainAppPage = () => {
       <Head pageTitle="Main App" pagePath="app" />
       <nav className="absolute grid grid-cols-5 p-3">
         <div className="col-span-1 flex justify-start h-12">
-          <Link href="/">
-            <a className="relative z-20 flex h-full px-5 items-center gap-2 border rounded-xl text-sm hover:bg-primary hover:border-primary hover:text-white hover:shadow-md transition bg-white bg-opacity-50">
-              <ArrowIcon size="1.2rem" />
-              <span>Back</span>
-            </a>
+          <Link
+            href="/"
+            className="relative z-20 flex h-full px-5 items-center gap-2 border rounded-xl text-sm hover:bg-primary hover:border-primary hover:text-white hover:shadow-md transition bg-white bg-opacity-50">
+
+            <ArrowIcon size="1.2rem" />
+            <span>Back</span>
+
           </Link>
         </div>
       </nav>
