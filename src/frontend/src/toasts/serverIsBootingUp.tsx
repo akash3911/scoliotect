@@ -17,7 +17,7 @@ const serverIsBootingUp = () => {
             className="mt-2 self-end px-3 py-2 bg-blue-600 text-white rounded-lg"
             onClick={() => toast.dismiss(t.id)}
           >
-            I'll wait.
+            I&apos;ll wait.
           </button>
         </span>
       </span>
