@@ -9,17 +9,20 @@ import { motion } from "framer-motion";
 import enterAnim from "@/utils/enterAnim";
 import AnimatedBackground from "components/AnimatedBackground";
 
+// Images
+import architecture from "../public/architecture.png";
+
 const Home: NextPage = () => {
   return (
     <div className="min-h-screen overflow-hidden">
-      <Head overrideTitle="Scoliotect - Automatically measure Cobb Angles with Machine Learning" />
+      <Head />
       <main className="h-[100svh]">
         <section className="relative h-full flex flex-col">
           <Nav />
           <AnimatedBackground />
           <div className="relative z-10 fluid-container px-6 md:px-9 flex-1 flex items-center">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
-              <motion.div {...enterAnim()} className="max-w-xl">
+              <div className="max-w-xl" {...enterAnim(0)}>
                 <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
                   Automatic <span className="text-primary">Cobb Angle</span>
                   <br />
@@ -36,14 +39,13 @@ const Home: NextPage = () => {
                     </a>
                   </Link>
                 </div>
-              </motion.div>
-
+              </div>
               <motion.div
                 {...enterAnim(0.15)}
                 className="relative w-full h-[240px] md:h-[380px] rounded-xl overflow-hidden shadow-lg bg-white/80"
               >
                 <Image
-                  src="/architecture.png"
+                  src={architecture}
                   alt="Scoliotect architecture diagram"
                   layout="fill"
                   objectFit="contain"
