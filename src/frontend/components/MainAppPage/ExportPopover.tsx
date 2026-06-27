@@ -26,6 +26,9 @@ import { useStore } from "store";
 import { debounce } from "lodash";
 //#endregion
 
+// Images
+import img1 from "../../../public/example_images/1.jpg";
+
 //#region Types
 type ExportTag = "PDF" | "JPG" | "PNG" | "Print";
 type ExportItem = {
@@ -49,7 +52,7 @@ const ExportPopover: React.FC<IExportPopoverProps> = ({}) => {
     useState<boolean>(false);
   // setCanvasURL can be used to regenerate the PDF.
   const [canvasURL, setCanvasURL] = useState<string>(
-    "http://localhost:3000/example_images/1.jpg"
+    img1.src
   );
   const scoliotectAPIResponse = useStore((state) => state.scoliotectAPIResponse);
   const drawSettings = useStore((state) => state.drawSettings);

@@ -39,6 +39,11 @@ import useServerDelayInformer from "@/hooks/useServerDelayInformer";
 import useDelayMounted from "@/hooks/useDelayMounted";
 import getMaxCobbAngle from "@/utils/cobbAngle/getMaxCobbAngle";
 
+// Images
+import img1 from "../public/example_images/1.jpg";
+import img2 from "../public/example_images/2.jpg";
+import img3 from "../public/example_images/3.jpg";
+
 const DISPLAY_TYPES: LandmarkDisplayType[] = [
   "no_lines",
   "top_lines",
@@ -219,15 +224,15 @@ const MainAppPage = () => {
                 </motion.p>
                 <motion.div {...enterAnim(0.3)} className="flex gap-5">
                   <ExampleImageButton
-                    exampleImageURL="/example_images/1.jpg"
+                    exampleImageURL={img1.src}
                     routeToApp={false}
                   />
                   <ExampleImageButton
-                    exampleImageURL="/example_images/2.jpg"
+                    exampleImageURL={img2.src}
                     routeToApp={false}
                   />
                   <ExampleImageButton
-                    exampleImageURL="/example_images/4.jpg"
+                    exampleImageURL={img3.src}
                     routeToApp={false}
                   />
                 </motion.div>
