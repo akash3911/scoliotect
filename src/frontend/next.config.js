@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 
 const repo = "scoliotect";
-const isGithubPages = process.env.DEPLOY_TARGET === "github";
+const isGithubPages = process.env.GITHUB_ACTIONS === "true";
 
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
 
   output: "export",
@@ -16,5 +16,3 @@ const nextConfig = {
     domains: ["raw.githubusercontent.com"],
   },
 };
-
-module.exports = nextConfig;
