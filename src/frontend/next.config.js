@@ -1,14 +1,15 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
+
 const repo = "scoliotect";
+const isGithubPages = process.env.DEPLOY_TARGET === "github";
 
 const nextConfig = {
   reactStrictMode: true,
 
   output: "export",
 
-  basePath: isProd ? `/${repo}` : "",
-  assetPrefix: isProd ? `/${repo}/` : "",
+  basePath: isGithubPages ? `/${repo}` : "",
+  assetPrefix: isGithubPages ? `/${repo}/` : "",
 
   images: {
     unoptimized: true,
